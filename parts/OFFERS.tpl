@@ -1,13 +1,3 @@
-<?php
-
-if (isset($_GET["landing"]) || 
-	isset($_GET["business"]) || 
-	isset($_GET["company"])
-) {
-	header("Location: index.php#form");
-}
-
-?>
 <div class="offers">
 	<div class="offers_wrapper">
 		<a name="landing"><div class="offers_landing_page">
@@ -18,9 +8,9 @@ if (isset($_GET["landing"]) ||
 					Разработка профессиональных Landing page для увеличения продаж вашего товара или услуги.
 					Альтернатива большому сайту или дополнение к уже существующему.
 				<p class="offers_header">
-					<form action="" method="GET">
-						<input name="landing" type="submit" value="Заказать" class="offers_order_btn">
-					</form>
+					<a href="index.php#form">
+					<input type="button" class="offers_order_btn" value="Заказать">
+					</a>
 				</p>
 			</div>
 			<div class="offers_prices">
@@ -37,9 +27,9 @@ if (isset($_GET["landing"]) ||
 				<p class="offers_header">Описание</p>
 					Небольшое Интернет представительство с описанием товаров или услуг, которые предоставляет ваша фирма. Обычно такой сайт состоит из нескольких страниц с описанием фирмы, небольшого каталога товаров и формы обратной связи. Сайт без панели управления (CMS).
 				<p class="offers_header">
-					<form action="" method="GET">
-						<input name="business" type="submit" value="Заказать" class="offers_order_btn">
-					</form>
+					<a href="index.php#form">
+					<input type="button" class="offers_order_btn" value="Заказать">
+					</a>				
 				</p>
 			</div>
 			<div class="offers_prices">
@@ -56,9 +46,9 @@ if (isset($_GET["landing"]) ||
 				<p class="offers_header">Описание</p>
 					На корпоративном сайте может быть несколько сотен страниц, а так же полный или частичный каталог продукции, галерея, модуль новостей, поиск или онлайн консультант для общения с клиентами.
 				<p class="offers_header">
-					<form action="" method="GET">
-						<input name="company" type="submit" value="Заказать" class="offers_order_btn">
-					</form>
+					<a href="index.php#form">
+					<input type="button" class="offers_order_btn" value="Заказать">
+					</a>
 				</p>
 			</div>
 			<div class="offers_prices">
